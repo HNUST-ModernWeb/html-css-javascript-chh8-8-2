@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人信息卡片</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>个人信息卡片</h1>
+    <div class="card">
+        <div class="avatar-container">
+            <img id="avatar" src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=professional%20avatar%20portrait&image_size=square" alt="个人头像">
+            <select id="avatar-select">
+                <option value="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=professional%20avatar%20portrait&image_size=square">专业头像</option>
+                <option value="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=casual%20avatar%20portrait&image_size=square">休闲头像</option>
+                <option value="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=funny%20avatar%20portrait&image_size=square">搞笑头像</option>
+            </select>
+            <input type="file" id="avatar-upload" accept="image/*">
+        </div>
+        <div class="info">
+            <input type="text" id="name" value="姓名">
+            <textarea id="bio" placeholder="个人简介"></textarea>
+            <button id="save-btn">保存</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
